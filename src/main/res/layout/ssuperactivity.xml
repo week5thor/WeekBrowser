@@ -1,0 +1,692 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<TextView
+		android:id="@+id/textview1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:text="ТИП ЕЛЕМЕНТУ"
+		android:textSize="20sp"
+		android:textStyle="bold|italic"
+		android:textColor="#000000" />
+	<TextView
+		android:id="@+id/prop"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:text="Неможливо добути властивості елемента"
+		android:textSize="12sp"
+		android:textColor="#FF0070" />
+	<LinearLayout
+		android:id="@+id/linear3"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal"
+		android:layout_weight="3">
+		<WebView
+			android:id="@+id/webview1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1" />
+		<LinearLayout
+			android:id="@+id/linear8"
+			android:layout_width="40dp"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+			<Button
+				android:id="@+id/changbg"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginBottom="5dp"
+				android:background="#00FF00"
+				android:text=""
+				android:textSize="12sp"
+				android:textColor="#000000"
+				android:layout_gravity="left"
+				android:layout_weight="1" />
+			<Button
+				android:id="@+id/third"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginBottom="5dp"
+				android:background="#00FF00"
+				android:text="1/3"
+				android:textSize="12sp"
+				android:textColor="#000000"
+				android:layout_weight="1" />
+			<Button
+				android:id="@+id/half"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginBottom="5dp"
+				android:background="#00FF00"
+				android:text="1/2"
+				android:textSize="12sp"
+				android:textColor="#000000"
+				android:layout_weight="1" />
+			<Button
+				android:id="@+id/twothird"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginBottom="5dp"
+				android:background="#00FF00"
+				android:text="2/3"
+				android:textSize="12sp"
+				android:textColor="#000000"
+				android:layout_weight="1" />
+			<Button
+				android:id="@+id/full"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="#00FF00"
+				android:text="1/1"
+				android:textSize="12sp"
+				android:textColor="#000000"
+				android:layout_weight="1" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/linear10"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal"
+		android:layout_weight="2">
+		<ScrollView
+			android:id="@+id/vscroll1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1">
+			<LinearLayout
+				android:id="@+id/linear1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="8dp"
+				android:orientation="vertical">
+				<LinearLayout
+					android:id="@+id/linear5"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical"
+					android:layout_weight="1">
+					<Button
+						android:id="@+id/topage"
+						android:layout_width="match_parent"
+						android:layout_height="30dp"
+						android:layout_margin="5dp"
+						android:background="#FF0000"
+						android:text="@string/element_page"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:layout_gravity="left" />
+					<TextView
+						android:id="@+id/textareaid"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal"
+						android:text="ID: prompt_textarea"
+						android:textSize="12sp"
+						android:textColor="#7000FF" />
+					<EditText
+						android:id="@+id/txtarea"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="top"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:hint="@string/textarea_hint"
+						android:textColorHint="#607D8B" />
+					<Button
+						android:id="@+id/txtready"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						android:padding="8dp"
+						android:background="#00FF00"
+						android:text="@string/done"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:layout_gravity="center_horizontal" />
+					<TextView
+						android:id="@+id/a1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Джерело елемента [▼]"
+						android:textSize="18sp"
+						android:textStyle="bold"
+						android:textColor="#FF0070"
+						android:layout_gravity="center_horizontal" />
+					<AutoCompleteTextView
+						android:id="@+id/img"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:hint="Edit Text"
+						android:textColorHint="#607D8B" />
+					<Button
+						android:id="@+id/downloadImageButton"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						android:background="#00FF00"
+						android:text="@string/download_elem"
+						android:textSize="12sp"
+						android:textColor="#000000" />
+					<LinearLayout
+						android:id="@+id/linear6"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						android:orientation="horizontal">
+						<Button
+							android:id="@+id/temproarystd"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_marginTop="5dp"
+							android:layout_marginRight="5dp"
+							android:padding="8dp"
+							android:background="#00FF00"
+							android:text="@string/new_tab"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:layout_weight="1" />
+						<Button
+							android:id="@+id/sametab"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_marginTop="5dp"
+							android:padding="8dp"
+							android:background="#00FF00"
+							android:text="@string/same_tab"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:layout_weight="1" />
+						<Button
+							android:id="@+id/bgtab"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_marginLeft="5dp"
+							android:layout_marginTop="5dp"
+							android:padding="8dp"
+							android:background="#00FF00"
+							android:text="@string/bg_tab"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:layout_weight="1" />
+					</LinearLayout>
+					<CheckBox
+						android:id="@+id/incognitosrc"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="@string/qs_incognito"
+						android:textSize="12sp"
+						android:textColor="#000000" />
+					<LinearLayout
+						android:id="@+id/srcbuttons2"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="5dp"
+						android:orientation="horizontal">
+						<Button
+							android:id="@+id/copysrc"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_marginRight="2dp"
+							android:background="#00FF00"
+							android:text="@string/copy"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:layout_weight="1" />
+						<Button
+							android:id="@+id/button1"
+							android:layout_width="match_parent"
+							android:layout_height="50dp"
+							android:layout_marginLeft="2dp"
+							android:background="#00FF00"
+							android:text="@string/share"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:layout_gravity="left"
+							android:layout_weight="1" />
+					</LinearLayout>
+					<Button
+						android:id="@+id/ad"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="5dp"
+						android:padding="8dp"
+						android:background="#FF0000"
+						android:text="@string/is_ad"
+						android:textSize="12sp"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/a2"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Посилання елемента [▼]"
+						android:textSize="18sp"
+						android:textStyle="bold"
+						android:textColor="#FF0070"
+						android:layout_gravity="center_horizontal" />
+					<EditText
+						android:id="@+id/href"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:hint="Edit Text"
+						android:textColorHint="#607D8B" />
+					<LinearLayout
+						android:id="@+id/urlbuttons"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						android:orientation="horizontal">
+						<Button
+							android:id="@+id/hnew"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_marginTop="5dp"
+							android:layout_marginRight="2dp"
+							android:padding="8dp"
+							android:background="#00FF00"
+							android:text="@string/new_tab"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:layout_weight="1" />
+						<Button
+							android:id="@+id/hthis"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_marginLeft="2dp"
+							android:layout_marginTop="5dp"
+							android:layout_marginRight="2dp"
+							android:padding="8dp"
+							android:background="#00FF00"
+							android:text="@string/same_tab"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:layout_weight="1" />
+						<Button
+							android:id="@+id/hbg"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_marginLeft="2dp"
+							android:layout_marginTop="5dp"
+							android:padding="8dp"
+							android:background="#00FF00"
+							android:text="@string/bg_tab"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:layout_weight="1" />
+					</LinearLayout>
+					<CheckBox
+						android:id="@+id/incognitohref"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="@string/qs_incognito"
+						android:textSize="12sp"
+						android:textColor="#000000" />
+					<LinearLayout
+						android:id="@+id/callbuttons"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						android:orientation="horizontal">
+						<Button
+							android:id="@+id/call"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_marginTop="5dp"
+							android:layout_marginRight="2dp"
+							android:background="#00FF00"
+							android:text="@string/to_dialer"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:layout_weight="1" />
+						<Button
+							android:id="@+id/sms"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_marginLeft="2dp"
+							android:layout_marginTop="5dp"
+							android:background="#00FF00"
+							android:text="@string/send_sms"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:layout_weight="1" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/urlbuttons2"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						android:layout_marginTop="5dp"
+						android:orientation="horizontal">
+						<Button
+							android:id="@+id/copyhref"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_marginRight="2dp"
+							android:background="#00FF00"
+							android:text="@string/copy"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:layout_weight="1" />
+						<Button
+							android:id="@+id/share"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_marginLeft="2dp"
+							android:padding="8dp"
+							android:background="#00FF00"
+							android:text="@string/share"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:layout_weight="1" />
+					</LinearLayout>
+					<TextView
+						android:id="@+id/a5"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal"
+						android:text="Текст елемента [▼]"
+						android:textSize="18sp"
+						android:textStyle="bold"
+						android:textColor="#FF0070"
+						android:layout_gravity="center_horizontal"
+						android:layout_weight="1" />
+					<EditText
+						android:id="@+id/eltext"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:hint="Edit Text"
+						android:textColorHint="#607D8B" />
+					<LinearLayout
+						android:id="@+id/textutils"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						android:orientation="horizontal">
+						<Button
+							android:id="@+id/copyeltxt"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_marginRight="2dp"
+							android:background="#00FF00"
+							android:text="@string/copy"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:layout_gravity="left"
+							android:layout_weight="1" />
+						<Button
+							android:id="@+id/shareeltxt"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_marginLeft="2dp"
+							android:background="#00FF00"
+							android:text="@string/share"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:layout_gravity="left"
+							android:layout_weight="1" />
+					</LinearLayout>
+					<TextView
+						android:id="@+id/a3"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal"
+						android:text="Код елемента [▼]"
+						android:textSize="18sp"
+						android:textStyle="bold"
+						android:textColor="#FF0070"
+						android:layout_gravity="center_horizontal"
+						android:layout_weight="1" />
+					<AutoCompleteTextView
+						android:id="@+id/elementhtml"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="bottom"
+						android:textSize="12sp"
+						android:textColor="#00FFFF"
+						android:hint="Edit Text"
+						android:textColorHint="#7000FF" />
+					<Button
+						android:id="@+id/add"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						android:background="#00FF00"
+						android:text="@string/refresh"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:layout_gravity="left" />
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+		<ScrollView
+			android:id="@+id/vscroll2"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1">
+			<LinearLayout
+				android:id="@+id/linear12"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+				<Button
+					android:id="@+id/toelem"
+					android:layout_width="match_parent"
+					android:layout_height="30dp"
+					android:layout_margin="5dp"
+					android:background="#FF0000"
+					android:text="@string/page_element"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:layout_gravity="left" />
+				<AutoCompleteTextView
+					android:id="@+id/autocomplete1"
+					android:layout_width="match_parent"
+					android:layout_height="70dp"
+					android:padding="8dp"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="Edit Text"
+					android:textColorHint="#607D8B" />
+				<Button
+					android:id="@+id/wayback"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:layout_marginTop="5dp"
+					android:padding="8dp"
+					android:background="#00FF00"
+					android:text="@string/time_machine"
+					android:textSize="12sp"
+					android:textColor="#000000" />
+				<LinearLayout
+					android:id="@+id/linear13"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:layout_marginTop="5dp"
+					android:orientation="horizontal">
+					<Button
+						android:id="@+id/copyurl"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_marginRight="2dp"
+						android:background="#00FF00"
+						android:text="@string/copy"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:layout_weight="1" />
+					<Button
+						android:id="@+id/sharesite"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_marginLeft="2dp"
+						android:background="#00FF00"
+						android:text="@string/share"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:layout_weight="1" />
+				</LinearLayout>
+				<Button
+					android:id="@+id/addshortcut"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_marginTop="5dp"
+					android:background="#00FF00"
+					android:text="@string/add_shortcut"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:layout_weight="1" />
+				<Button
+					android:id="@+id/button3"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_marginTop="5dp"
+					android:background="#00FF00"
+					android:text="@string/loaded_res"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:layout_weight="1" />
+				<TextView
+					android:id="@+id/a4"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Текст сайту [▼]"
+					android:textSize="18sp"
+					android:textStyle="bold"
+					android:textColor="#FF0070"
+					android:layout_gravity="center_horizontal" />
+				<EditText
+					android:id="@+id/txtpage"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:textSize="12sp"
+					android:textColor="#33B5E5"
+					android:hint="Edit Text"
+					android:textColorHint="#607D8B" />
+				<TextView
+					android:id="@+id/hint"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center_horizontal"
+					android:text="@string/text_summar_gpt"
+					android:textSize="12sp"
+					android:textColor="#FF0070"
+					android:layout_gravity="center_horizontal" />
+				<LinearLayout
+					android:id="@+id/linear7"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:orientation="horizontal">
+					<Button
+						android:id="@+id/w30"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:background="#00FF00"
+						android:text="30 СЛІВ"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:layout_weight="1" />
+					<Button
+						android:id="@+id/w120"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:background="#00FF00"
+						android:text="120 СЛІВ"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:layout_weight="1" />
+					<Button
+						android:id="@+id/w240"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:background="#00FF00"
+						android:text="240 СЛІВ"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:layout_weight="1" />
+					<Button
+						android:id="@+id/ab1"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:background="#00FF00"
+						android:text="1 АБЗАЦ"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:layout_weight="1" />
+					<Button
+						android:id="@+id/ab3"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:background="#00FF00"
+						android:text="3 АБЗАЦИ"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:layout_weight="1" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear4"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:paddingTop="5dp"
+					android:orientation="horizontal">
+					<AutoCompleteTextView
+						android:id="@+id/fn"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:hint="Edit Text"
+						android:textColorHint="#607D8B"
+						android:layout_weight="1" />
+					<Button
+						android:id="@+id/savehtml"
+						android:layout_width="wrap_content"
+						android:layout_height="50dp"
+						android:padding="8dp"
+						android:background="#00FF00"
+						android:text="💾HTML"
+						android:textSize="12sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<TextView
+					android:id="@+id/a6"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal"
+					android:text="Код сайту [▼]"
+					android:textSize="18sp"
+					android:textStyle="bold"
+					android:textColor="#FF0070"
+					android:layout_gravity="center_horizontal" />
+				<EditText
+					android:id="@+id/pagecode"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="Edit Text"
+					android:textColorHint="#607D8B" />
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+</LinearLayout>
