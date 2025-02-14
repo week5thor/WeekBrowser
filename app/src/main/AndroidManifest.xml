@@ -1,0 +1,193 @@
+
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.a525team.weekbrowser">
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	<uses-permission android:name="android.permission.USE_FINGERPRINT" />
+	<uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+	<application
+		android:allowBackup="true"
+		android:icon="@drawable/app_icon"
+		android:label="@string/app_name"
+		android:requestLegacyExternalStorage="true"
+		android:theme="@android:style/Theme.Holo.NoActionBar"
+		android:largeHeap="true"
+		android:usesCleartextTraffic="true">
+		<activity
+			android:name=".MainActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme.Holo.NoActionBar"
+			android:launchMode="singleTask"
+			android:exported="true">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".HomeActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:supportsPictureInPicture="true"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".SettingsActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTask"
+			android:theme="@style/NoActionBar" />
+		<activity
+			android:name=".BookmarksActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@style/NoActionBar" />
+		<activity
+			android:name=".HistoryActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@style/NoActionBar" />
+		<activity
+			android:name=".UseragentActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@style/NoActionBar" />
+		<activity
+			android:name=".CustomthemeActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@style/NoActionBar" />
+		<activity
+			android:name=".SsuperactivityActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTask"
+			android:theme="@style/NoActionBar" />
+		<activity
+			android:name=".ReplaceActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:screenOrientation="fullSensor"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@style/NoActionBar" />
+		<activity
+			android:name=".IntentActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:theme="@android:style/Theme.Holo.NoActionBar"
+			android:windowSoftInputMode="stateHidden"
+			android:exported="true">
+<intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <data android:scheme="http" />
+        <data android:scheme="https" />
+        <!-- Додайте інші схеми, які ваш браузер може обробляти -->
+    </intent-filter>
+    <intent-filter>
+    <action android:name="android.intent.action.VIEW" />
+    <category android:name="android.intent.category.DEFAULT" />
+    <data android:mimeType="application/wesk" />
+        <data android:mimeType="application/wesk2" />
+            <data android:mimeType="application/wedes" />
+    <data android:mimeType="application/htm" />
+    <data android:mimeType="application/html" />
+    <data android:mimeType="application/mht" />
+    <data android:mimeType="application/mhtml" />
+</intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:mimeType="text/*" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+</activity>
+		<activity
+			android:name=".GrantActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTask"
+			android:theme="@style/NoActionBar"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".ShortcutActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:supportsPictureInPicture="true"
+			android:theme="@style/NoActionBar"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="stateHidden" />
+		<activity
+			android:name=".ExceptionsActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:launchMode="singleTask"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme.Holo.NoActionBar" />
+		<activity
+			android:name=".DebugActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:theme="@android:style/Theme.Holo.NoActionBar"
+			android:windowSoftInputMode="stateHidden"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".LockActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@style/NoActionBar"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".ExtensionsActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:supportsPictureInPicture="true"
+			android:theme="@style/NoActionBar"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".ExtensioneditorActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@style/NoActionBar"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".LoadresActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@style/NoActionBar"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".DebugActivity"
+			android:screenOrientation="portrait" />
+android:enableOnBacklnvokedCallback=true
+	</application>
+</manifest>

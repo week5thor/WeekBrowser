@@ -1,0 +1,113 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="8dp"
+		android:background="#000000"
+		android:orientation="vertical"
+		android:layout_weight="999">
+		<TextView
+			android:id="@+id/name"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:background="#000000"
+			android:gravity="center_horizontal"
+			android:text="@string/grant_title"
+			android:textSize="20sp"
+			android:textStyle="bold|italic"
+			android:textColor="#FFFFFF" />
+		<TextView
+			android:id="@+id/hint"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:gravity="center_horizontal"
+			android:text="@string/text_with_star"
+			android:textSize="16sp"
+			android:textColor="#BDBDBD" />
+		<ScrollView
+			android:id="@+id/vscroll1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<LinearLayout
+				android:id="@+id/linear2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+				<TextView
+					android:id="@+id/storage"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="@string/memory_access"
+					android:textSize="12sp"
+					android:textColor="#FFFFFF" />
+				<TextView
+					android:id="@+id/location"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="@string/geolocation"
+					android:textSize="12sp"
+					android:textColor="#FFFFFF" />
+				<TextView
+					android:id="@+id/overlay"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="@string/overlay_grant"
+					android:textSize="12sp"
+					android:textColor="#FFFFFF" />
+				<TextView
+					android:id="@+id/mic"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="@string/microphone"
+					android:textSize="12sp"
+					android:textColor="#FFFFFF" />
+				<TextView
+					android:id="@+id/camera"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="@string/camera"
+					android:textSize="12sp"
+					android:textColor="#FFFFFF" />
+				<TextView
+					android:id="@+id/ignorebat"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="@string/ignorebat"
+					android:textSize="12sp"
+					android:textColor="#FFFFFF" />
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+	<Spinner
+		android:id="@+id/lang"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:padding="8dp"
+		android:background="#B71C1C"
+		android:spinnerMode="dropdown" />
+	<Button
+		android:id="@+id/done"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:background="#33B5E5"
+		android:text="@string/done"
+		android:textSize="12sp"
+		android:textColor="#000000"
+		android:layout_weight="1" />
+</LinearLayout>
