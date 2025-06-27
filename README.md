@@ -58,6 +58,6 @@ You can use, modify, share, or sell it freely, without restriction.
 
 These components are used under their respective open source licenses.
 
-See the [LICENSE](./LICENSE) file and https://unlicense.org/ for full text.
+See the https://unlicense.org/ for more information.
 
 *Created by an indie developer passionate about fast and accessible apps for all devices.*
