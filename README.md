@@ -9,7 +9,7 @@
 - 🌐 **WebView-based browsing** — lightweight and efficient.
 - 🕒 **Browsing history** with timestamps and auto-cleanup.
 - 📑 **Bookmarks and quick access page**.
-- 💾 **Customizable settings** — including max history length and time.
+- 💾 **Customizable settings**
 - 🔒 **No ads, no tracking** — privacy first.
 - 🧠 **Works on older Android versions** — from Android 4.2
 - 🪟 **Window mode and multilinks** — you can open many websites on one screen and share multilinks with it.
