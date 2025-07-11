@@ -1,0 +1,178 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<ScrollView
+		android:id="@+id/vscroll1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<LinearLayout
+			android:id="@+id/linear1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/name"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal"
+				android:text="МЕНЕДЖЕР ПОШУКУ ТА ЗАМІН"
+				android:textSize="18sp"
+				android:textStyle="bold|italic"
+				android:textColor="#00FF00"
+				android:layout_gravity="center_horizontal" />
+			<TextView
+				android:id="@+id/hint"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Тут ви можете задати правила для заміни у посиланнях, які виконаються при довгому натисканні на кнопку приховування панелі [⛶]. Наприклад, для завантаження відео з Youtube Ви можете задати у пошук &quot;youtube.com&quot;, а у заміну &quot;ssyoutube.com&quot; (додаєте &quot;ss&quot; перед &quot;youtube&quot;, усе пишете без подвійних лапок). Регулярні вирази підтримуються"
+				android:textSize="12sp"
+				android:textColor="#7000FF" />
+			<TextView
+				android:id="@+id/a1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Заміна №1"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				android:textColor="#FF0070"
+				android:layout_gravity="center_horizontal" />
+			<AutoCompleteTextView
+				android:id="@+id/search1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:textSize="12sp"
+				android:textColor="#00FFFF"
+				android:hint="Пошук"
+				android:textColorHint="#7000FF" />
+			<AutoCompleteTextView
+				android:id="@+id/replace1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:textSize="12sp"
+				android:textColor="#00FFFF"
+				android:hint="Заміна"
+				android:textColorHint="#7000FF" />
+			<TextView
+				android:id="@+id/a2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Заміна №2"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				android:textColor="#FF0070"
+				android:layout_gravity="center_horizontal" />
+			<AutoCompleteTextView
+				android:id="@+id/search2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:textSize="12sp"
+				android:textColor="#00FFFF"
+				android:hint="Пошук"
+				android:textColorHint="#7000FF" />
+			<AutoCompleteTextView
+				android:id="@+id/replace2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:textSize="12sp"
+				android:textColor="#00FFFF"
+				android:hint="Заміна"
+				android:textColorHint="#7000FF" />
+			<TextView
+				android:id="@+id/a3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Заміна №3"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				android:textColor="#FF0070"
+				android:layout_gravity="center_horizontal" />
+			<AutoCompleteTextView
+				android:id="@+id/search3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:textSize="12sp"
+				android:textColor="#00FFFF"
+				android:hint="Пошук"
+				android:textColorHint="#7000FF" />
+			<AutoCompleteTextView
+				android:id="@+id/replace3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:textSize="12sp"
+				android:textColor="#00FFFF"
+				android:hint="Заміна"
+				android:textColorHint="#7000FF" />
+			<TextView
+				android:id="@+id/a4"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Заміна №4"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				android:textColor="#FF0070"
+				android:layout_gravity="center_horizontal" />
+			<AutoCompleteTextView
+				android:id="@+id/search4"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:textSize="12sp"
+				android:textColor="#00FFFF"
+				android:hint="Пошук"
+				android:textColorHint="#7000FF" />
+			<AutoCompleteTextView
+				android:id="@+id/replace4"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:textSize="12sp"
+				android:textColor="#00FFFF"
+				android:hint="Заміна"
+				android:textColorHint="#7000FF" />
+			<TextView
+				android:id="@+id/a5"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Заміна №5"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				android:textColor="#FF0070"
+				android:layout_gravity="center_horizontal" />
+			<AutoCompleteTextView
+				android:id="@+id/search5"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:textSize="12sp"
+				android:textColor="#00FFFF"
+				android:hint="Пошук"
+				android:textColorHint="#7000FF" />
+			<AutoCompleteTextView
+				android:id="@+id/replace5"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:textSize="12sp"
+				android:textColor="#00FFFF"
+				android:hint="Заміна"
+				android:textColorHint="#7000FF" />
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
