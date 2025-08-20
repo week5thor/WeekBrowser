@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+<!-- v5.8 -->
+<!-- Main activity -->
+<string name="yes">Yes</string>
+<string name="no">No</string>
+<string name="qs_changecol">Change page col.</string>
+<string name="qs_js">JS</string>
+<string name="qs_pc">PC version</string>
+<string name="qs_incognito">Incognito</string>
+<string name="qs_loadimg">Load images</string>
+<string name="qs_blad">Block ads</string>
+<string name="qs_bliframe">Block. "sites in sites"</string>
+<string name="qs_swipetoref">Swipe to refresh</string>
+<string name="qs_uisize">Interface size</string>
+<string name="qs_fontsize">General font size</string>
+<string name="qs_minfont">Minimal font size</string>
+<string name="copy_all_url">COPY ALL TABS URL</string>
+<string name="cr_multilink">CREATE MULTILINK</string>
+<string name="in_other_app">OPEN THIS PAGE IN OTHER APP</string>
+<string name="searchbar">Search/address</string>
+<string name="loading">Loading</string>
+<string name="sitesearch">Search at page</string>
+<string name="nointernet">(No Internet connection)</string>
+<string name="blocksite1">Choose the best variant for page block.\n\nChoose 1-st variant to block everything with this domain:
+</string>
+<string name="blocksite2">\n,\n or "Variant 2" to block this URL only: \n</string>
+<string name="cancel">Cancel</string>
+<string name="ok">OK</string>
+<string name="adblocked">This page are blocked with ad blocker.</string>
+<string name="colexcept">What do this forced with page theming?</string>
+<string name="change">Change</string>
+<string name="nochange">Not change</string>
+<string name="exdefault">Not define</string>
+<string name="jsexcept">What do this forced with page JS?</string>
+<string name="turnon">Turn on</string>
+<string name="turnoff">Turn off</string>
+<string name="bladexcept">What do this forced with page ads block?\nAt this session blocked</string>
+<string name="ads">ads</string>
+<string name="iframeexcept">What do this forced with \"sites on sites\" on this webpage?</string>
+<string name="swipeexcept">Do allow \"swipe to refresh\" in this page?</string>
+<string name="choosemode">Choose mode</string>
+<string name="fullscreen">Fullscreen</string>
+<string name="overlay">Overlay other apps</string>
+
+<!-- Settings activity -->
+<string name="general_settings">GENERAL SETTINGS</string>
+<string name="def_search">Default search engine</string>
+<string name="content_view">Content view</string>
+<string name="show_search_panel">Show recent search prompts panel</string>
+<string name="show_tools_panel">Show toolbar</string>
+<string name="tools_panel_top">Toolbar at top</string>
+<string name="search_panel_top">Search bar at top</string>
+<string name="hide_panels">Hide panels when scrolling down</string>
+<string name="show_zoom">Show zoom buttons</string>
+<string name="forbid_screen">Forbid screenshots in incognito mode</string>
+<string name="hide_content">Hide browser content in recent apps screen when incognito is on</string>
+<string name="mono_font">Use monospace font in textareas</string>
+<string name="open_scripts">SCRIPTS SETTINGS</string>
+<string name="open_useragent">USERAGENT SETTINGS</string>
+<string name="open_search_replace">SEARCH AND REPLACE IN URLS MANAGER</string>
+<string name="open_exceptions">EXCEPTIONS FOR DIFFERENT SITES</string>
+<string name="buttons_size">Bar buttons size</string>
+<string name="cache_n_optimization">Cache settings and optimization</string>
+<string name="standard">Standard</string>
+<string name="cache_net">Cache else network</string>
+<string name="net_only">Network only</string>
+<string name="cache_only">Cache only (offline)</string>
+<string name="no_internet">Offline mode when no Internet connection</string>
+<string name="ram_limit">Random access memory usage limit: </string>
+<string name="theme">Design theme</string>
+<string name="white">White</string>
+<string name="light">Light</string>
+<string name="dark">Dark</string>
+<string name="black">Black</string>
+<string name="high_contrast">High contrast</string>
+<string name="user_theme">User</string>
+<string name="open_skin_editor">OPEN SKIN EDITOR (YOU CAN MAY ALSO OPEN SKIN FILE)</string>
+<string name="loading_style">Loading indicator style</string>
+<string name="align_center">Fit to center</string>
+<string name="start_page">Starting page</string>
+<string name="auto_start_page">Automaticaly choose last visited page</string>
+<string name="bookmarks">BOOKMARKS</string>
+<string name="start_page_hint">Start page link</string>
+<string name="clean">Clean</string>
+<string name="at_exit">At exit</string>
+<string name="clear_search">CLEAR SEARCH HISTORY</string>
+<string name="open_history_clean">VISITED WEBPAGES HISTORY (YOU CAN CLEAN THIS THERE)</string>
+<string name="clear_cache">CLEAR CACHE</string>
+<string name="clear_cookie">CLEAR COOKIE</string>
+<string name="clear_autocomp">CLEAR AUTOCOMPLETE DATA</string>
+<string name="block_ad">Ads blocking</string>
+<string name="block_unwanted_sites">Block redirects to unwanted pages</string>
+<string name="iframe_button">Show buttons near \"sites in sites\" which can open this separately</string>
+<string name="skip_video">Try to skip videoads</string>
+<string name="skip_video_keywords">Keywords for skip videoads (supports regular expressions, write|words|through|pipes|without|extra|spaces):</string>
+<string name="skip_video_keywords_hint">Skip with|Remaining ad|Advertisement [0-9]</string>
+<string name="about">About developer</string>
+<string name="about_dev">Help me please with English translation, you can write me to Telegram. I will be very happy if you send me some money (if you can send money to ukrainian PrivatBank).\n\nDeveloping: week_thor\n\nTranslations:
+Ukrainian, russian, english: week_thor\n\n</string>
+<string name="copy">COPY</string>
+<string name="private_tg">GO TO PRIVATE CHAT WITH DEVELOPER (TELEGRAM)</string>
+<string name="channel_tg">GO TO TELEGRAM CHANNEL</string>
+<string name="privatcard">COPY PRIVATBANK CARD NUMBER</string>
+<string name="dev_settings">Developer settings</string>
+<string name="show_used_ram">Show used RAM</string>
+<string name="force_crash">FORCE CRASH</string>
+
+<!-- Settings hints -->
+<string name="hide_panel_hint">Якщо з якихось причин не виходить проявити панелі, вийдіть з браузера та зайдіть, найпростіший спосіб — натиснути кнопку (або здійснити жест) \"Недавні програми □\", та відкрити WeekBrowser</string>
+<string name="hide_content_hint">Працює не на всіх пристроях, якщо все-таки це потрібно, забороніть скріншоти</string>
+<string name="no_thanks">Ні, дякую</string>
+<string name="cache_hint">Режим \"Стандарт\" часто є найоптимальнішим варіантом.\n\n\"Спочатку кеш, потім мережа\" може зекономити Ваш інтернет-трафік, але на деяких сайтах з динамічно оновлюваною інформацією може не оновлюватися інформація.\n\n\"Лише мережа\" зекономить Вашу пам\'ять телефону (кеш не буде зберігатися), але буде більший інтернет-трафік.\n\n\"Лише кеш\" — це режим, у якій мережа зовсім не використовується, через що це найменш корисна опція.</string>
+<string name="ram_limit_hint">По стандарту стоїть 3/4 від загальної ОЗП.\n\nЯкщо у Вас вкладки часто пропадають з фонового режиму, збільште ліміт, якщо це можливо.\n\nЯкщо у Вас виникають зависання чи вильоти з повідомленням \"OutOfMemoryError\", спробуйте зменшити ліміт.</string>
+<string name="iframe_button_hint">Це дуже недооцінена кнопка, яка може дати можливість дивитися більше відео без реклами! Якщо Ви побачите цю []↗ кнопку біля відеоплеєра на сайті, рекомендую її натиснути ;)</string>
+<string name="openwith">Відкрити через...</string>
+<string name="noopenwith">Немає доступних програм для відкриття цього сайту</string>
+
+<!-- Bookmarks and shortcuts activity -->
+
+<string name="typehere">Type here</string>
+<string name="bookmark_name">Bookmark name</string>
+<string name="shortcut_name">Shortcut name</string>
+<string name="link">Link</string>
+<string name="generallink">SIMPLE LINK</string>
+<string name="multilink">MULTILINK</string>
+<string name="name_color">Name color</string>
+<string name="add">ADD</string>
+<string name="delete">DELETE</string>
+<string name="refresh">REFRESH</string>
+<string name="text_button">TEXT</string>
+<string name="background_button">BACKGROUND</string>
+<string name="fontsize">Font size</string>
+<string name="fontweight">Boldness</string>
+<string name="italic">Italic</string>
+<string name="row_interval">Interval between rows</string>
+<string name="font">Font</string>
+<string name="text_register">Text case</string>
+<string name="all_big">ALL UPPERCASE</string>
+<string name="all_small">all lowercase</string>
+<string name="capitalize">Capitalize Every Word</string>
+<string name="text_align">Text align</string>
+<string name="textshadowx">Shadow: position X</string>
+<string name="textshadowy">Position Y</string>
+<string name="blur">Blur</string>
+<string name="color">Color</string>
+<string name="alpha">Opacity</string>
+<string name="textborder_size">Letter border: thickness</string>
+<string name="wordborder_size">Word border: thickness</string>
+<string name="borderstyle">Border style</string>
+<string name="filter_brightness">Filter: brightness</string>
+<string name="contrast">Contrast</string>
+<string name="saturation">Saturation</string>
+<string name="sepia">Sepia</string>
+<string name="invert">Inversion</string>
+<string name="hue_rotate">Hue rotate</string>
+<string name="blend_mode">Blending mode</string>
+<string name="text_bg">TEXT &gt;&gt; BACKGROUND</string>
+<string name="bg_text">TEXT &lt;&lt; BACKGROUND</string>
+<string name="choose_photo">CHOOSE PHOTO</string>
+<string name="remove_photo">REMOVE PHOTO</string>
+<string name="bg_color_choose">SET THEME COLOR BG</string>
+<string name="img_size">Image size</string>
+<string name="bgborder_size">Background border: thickness</string>
+<string name="design_name">Design name:</string>
+<string name="importt">IMPORT (OPEN)</string>
+<string name="export">EXPORT (SAVE)</string>
+<string name="link_button">LINK</string>
+<string name="design_button">DESIGN</string>
+<string name="html_editor">HTML EDITOR</string>
+
+<!-- History activity -->
+
+<string name="do_you_want_delete_all">After taping \"Yes\" button you will clean history. Restore this is not possible. Do you want? Think twice ;)</string>
+<string name="clear_all">CLEAR ALL</string>
+
+<!-- Useragent activity -->
+
+<string name="if_pc_off">If PC mode is disabled:</string>
+<string name="if_pc_on">If PC mode is enabled:</string>
+<string name="current_ua">Current useragent</string>
+
+<!-- Supermenu activity -->
+
+<string name="element_page">ELEMENT &gt;&gt; PAGE</string>
+<string name="page_element">ELEMENT &lt;&lt; PAGE</string>
+<string name="textarea_hint">Type text which you want type to choosed textarea</string>
+<string name="done">DONE</string>
+<string name="src">Element source</string>
+<string name="href">Element link</string>
+<string name="eltext">Element text</string>
+<string name="elcode">Element code</string>
+<string name="wtext">Webpage text</string>
+<string name="wcode">Webpage code</string>
+<string name="download_elem">DOWNLOAD ELEMENT</string>
+<string name="new_tab">NEW TAB</string>
+<string name="same_tab">SAME TAB</string>
+<string name="bg_tab">BACKGROUND TAB</string>
+<string name="share">SHARE</string>
+<string name="to_dialer">TYPE TO DIALER</string>
+<string name="send_sms">WRITE SMS</string>
+<string name="time_machine">TIME MACHINE</string>
+<string name="add_shortcut">ADD SHORTCUT</string>
+<string name="text_summar_gpt">Text will be summarize with artifical intelligence technology named ChatGPT by OpenAI®</string>
+<string name="words">WORDS</string>
+<string name="paragraphs">PARAGRAPHS</string>
+<string name="is_ad">IS THIS AD?</string>
+<string name="is_not_ad">IS THIS NOT AD?</string>
+<string name="container">CONTAINER</string>
+<string name="header">HEADER</string>
+<string name="body">MAIN CONTENT</string>
+<string name="htmltitle">TITLE</string>
+<string name="text">TEXT</string>
+<string name="textarea">TEXTAREA</string>
+<string name="button">BUTTON</string>
+<string name="smselect">POPUP LIST</string>
+<string name="smvideo">VIDEO</string>
+<string name="sm_svg">VECTOR IMAGE</string>
+<string name="sm_path">VECTORS FOR VECTOR IMAGE</string>
+<string name="sm_img">IMAGE</string>
+<string name="sm_iframe">SITE IN SITE</string>
+<string name="sm_code">PROGRAM CODE</string>
+<string name="sm_obj">OBJECT</string>
+<string name="unknown_element">UNKNOWN ELEMENT</string>
+
+<!-- Grant activity -->
+
+<string name="grant_title">PLEASE GRANT ME SOME PERMISSIONS!</string>
+<string name="text_with_star">Text with star* is neccessary permissions. Tap on text to grant. Green text symbolizes granted permissions</string>
+<string name="memory_access">STORAGE ACCESS*\nTis is very neccessary because browser settings will save directly in internal storage with other files</string>
+<string name="geolocation">GEOLOCATION ACCESS\nPages will be know your precize location (if you turned on this in device). This may be good for webnavigators, for example</string>
+<string name="overlay_grant">OVERLAY OTHER APPS\nAllows locate videoplayer on the screen while browser is hidden</string>
+
+<!-- Exceptions activity -->
+
+<string name="js_e">JS</string>
+<string name="blockad_e">ADS BLOCK</string>
+<string name="swipe_e">SWIPE REFRESH</string>
+<string name="redraw_e">SKIN CHANGER</string>
+<string name="frame_e">BLOCK. \"SITES IN SITES\"</string>
+
+<!-- v5.9 -->
+<string name="jslogon">Enable JavaScript log in file \"WeekBrowser/dev/JavaScriptLog.txt\"</string>
+<string name="browser_locked">BROWSER IS LOCKED!\nENTER THE PASSWORD\n(default is 1111)</string>
+<string name="incorrect_password">Password is incorrect</string>
+<string name="incorrect_bio">Fingerprint is incorrect</string>
+<string name="is_bio_available">You can also unlock with fingerprint</string>
+<string name="confidence">Confidence and safety</string>
+<string name="lock_app">Lock app</string>
+<string name="incognito_lock_only">Incognito only</string>
+<string name="hide_password">Hide password when typing (show random digits instead of real)</string>
+<string name="pin_requirements">PIN must contain 1-10 digits</string>
+<string name="wantopen">Do you want open this URL in other app?</string>
+<string name="dontgrant">You don\'t granted necessary permissions!</string>
+
+<!-- v5.91 -->
+<string name="wantexit">Short click — bookmarks. Are you want to exit?</string>
+<string name="backbtn">Back</string>
+<string name="forwardbtn">Forward</string>
+<string name="homebtn">To start of page</string>
+<string name="endbtn">To end of page</string>
+<string name="historybtn">History</string>
+<string name="tabsbtn">Tabs</string>
+<string name="searchonpagebtn">Search on page</string>
+<string name="positionbtn">Position manager</string>
+<string name="quicksettingsbtn">Quick settings</string>
+<string name="settingsbtn">General settings</string>
+<string name="closebtn">Close</string>
+<string name="copybtn">Copy</string>
+<string name="pastebtn">Paste</string>
+<string name="pastesearchbtn">Paste + search</string>
+<string name="selallbtn">Select all</string>
+<string name="geturlbtn">Get current URL</string>
+<string name="skipvidbtn">Skip video</string>
+
+<!-- v6.0 -->
+<string name="changebtntext">TAP HERE TO CHANGE BUTTON TEXT COLOR</string>
+<string name="enter_skin_name">ENTER SKIN NAME</string>
+<string name="general_buttons">GENERAL BUTTONS</string>
+<string name="red_buttons">RED BUTTONS</string>
+<string name="background">BACKGROUND</string>
+<string name="text_and_other">TEXT AND OTHER</string>
+<string name="export_wesk">EXPORT</string>
+<string name="reverse">REVERSE</string>
+<string name="all_up">ALL_UP</string>
+<string name="all_down">ALL_DOWN</string>
+<string name="shuffle">SHUFFLE</string>
+<string name="gradient">Gradient</string>
+<string name="num_of_seg">Number of segments</string>
+<string name="sharpness">Sharpness</string>
+<string name="center_x">Center X</string>
+<string name="center_y">Center Y</string>
+<string name="radius">Radius</string>
+<string name="big_roundness">Roundness for big buttons</string>
+<string name="small_roundness">Roundness for small buttons</string>
+<string name="udlinear">Up to down linear</string>
+<string name="lrlinear">Left to right linear</string>
+<string name="diaglin1">Diagonal linear #1</string>
+<string name="diaglin2">Diagonal linear #2</string>
+<string name="radial">Radial (unstable!)</string>
+<string name="sweep">Sweep</string>
+<string name="textcol">Text color</string>
+<string name="textareacol">Textarea color</string>
+<string name="addtextcol">Additional text color</string>
+<string name="hintcol">Hint color</string>
+<string name="compcol">Compose button color\n(Android 5.0+)</string>
+<string name="trackcol">Trackpad color\n(Android 5.0+)</string>
+<string name="thumbcol">Thumb color\n(Android 5.0+)</string>
+<string name="choose_style">Style (need to restart)</string>
+<string name="color_no">Color #</string>
+<string name="android12warning">Palette (and probably your skin) below can change by itself when you change system wallpaper. Works on Android 12+ only, else only you will see standard non-magic palette</string>
+
+
+
+</resources>

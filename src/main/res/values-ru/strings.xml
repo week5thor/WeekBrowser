@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+<!-- v5.8 -->
+<!-- Main activity -->
+<string name="yes">Да</string>
+<string name="no">Нет</string>
+<string name="qs_changecol">Измен. цвет сайта</string>
+<string name="qs_js">JS</string>
+<string name="qs_pc">ПК-версия</string>
+<string name="qs_incognito">Инкогнито</string>
+<string name="qs_loadimg">Загр. изобр.</string>
+<string name="qs_blad">Блок. рекламы</string>
+<string name="qs_bliframe">Блок. "сайты в сайте"</string>
+<string name="qs_swipetoref">Потянуть вверх для обновления</string>
+<string name="qs_uisize">Размер интерфейса</string>
+<string name="qs_fontsize">Общий размер шрифта</string>
+<string name="qs_minfont">Минимальный размер шрифта</string>
+<string name="copy_all_url">КОПИРОВАТЬ АДРЕСА ВСЕХ ВКЛАДОК</string>
+<string name="cr_multilink">СОЗДАТЬ МУЛЬТИССЫЛКУ</string>
+<string name="in_other_app">ОТКРЫТЬ ЭТОТ САЙТ В ДРУГОЙ ПРОГРАММЕ</string>
+<string name="searchbar">Поиск/адрес</string>
+<string name="loading">Загрузка</string>
+<string name="sitesearch">Поиск по сайту</string>
+<string name="nointernet">(Нет интернет-соединения)</string>
+<string name="blocksite1">Выберите лучший вариант для блокировки сайта.\n\nВыберите вариант 1, чтобы блокировать все с этим доменом
+</string>
+<string name="blocksite2">\n,\n или "Вариант 2", чтобы блокировать только этот адрес: \n</string>
+<string name="cancel">Отмена</string>
+<string name="ok">OK</string>
+<string name="adblocked">Этот сайт заблокирован блокировщиком рекламы.</string>
+<string name="colexcept">Что принудительно делать с оформлением на этом сайте?</string>
+<string name="change">Изменять</string>
+<string name="nochange">Не изменять</string>
+<string name="exdefault">Не определять</string>
+<string name="jsexcept">Что принудительно делать с JavaScript на этом сайте?</string>
+<string name="turnon">Включать</string>
+<string name="turnoff">Выключать</string>
+<string name="bladexcept">Что принудительно делать с блокированием рекламы на этом сайте?\nЗа этот сеанс заблокированно</string>
+<string name="ads">реклам</string>
+<string name="iframeexcept">Что принудительно делать с блокировкой \"сайтов в сайте\" на этом сайте?</string>
+<string name="swipeexcept">Позволить ли обновление перетаскиванием вниз на этом сайте?</string>
+<string name="choosemode">Выбор режима</string>
+<string name="fullscreen">Полноэкранный режим</string>
+<string name="overlay">Поверх других окон</string>
+
+<!-- Settings activity -->
+<string name="general_settings">ОБЩИЕ НАСТРОЙКИ</string>
+<string name="def_search">Поисковая система по умолчанию</string>
+<string name="content_view">Отображение содержания</string>
+<string name="show_search_panel">Показать панель поисковых запросов</string>
+<string name="show_tools_panel">Показать панель инструментов</string>
+<string name="tools_panel_top">Панель инструментов сверху</string>
+<string name="search_panel_top">Панель поиска сверху</string>
+<string name="hide_panels">Скрывать панели при прокрутке вниз</string>
+<string name="show_zoom">Показать кнопки масштабирования</string>
+<string name="forbid_screen">Запретить скриншоты в режиме инкогнито</string>
+<string name="hide_content">Скрывать содержание экрана браузера в списке недавних программ</string>
+<string name="mono_font">Использовать моноширинный шрифт в текстовых полях</string>
+<string name="open_scripts">НАСТРОЙКИ СКРИПТОВ</string>
+<string name="open_useragent">НАСТРОЙКИ АГЕНТА ПОЛЬЗОВАТЕЛЯ</string>
+<string name="open_search_replace">МЕНЕДЖЕР ПОИСКА И ЗАМЕН В URL-АДРЕСАХ</string>
+<string name="open_exceptions">НАСТРОЙКИ ИСКЛЮЧЕНИЙ ДЛЯ ОТДЕЛЬНЫХ САЙТОВ</string>
+<string name="buttons_size">Размер кнопок панелей</string>
+<string name="cache_n_optimization">Настройки кэша и оптимизация</string>
+<string name="standard">Стандарт</string>
+<string name="cache_net">Сначала кэш, потом сеть</string>
+<string name="net_only">Только сеть</string>
+<string name="cache_only">Только кэш (оффлайн)</string>
+<string name="no_internet">Оффлайн-режим, если нет интернет-соединения</string>
+<string name="ram_limit">Ограничение использования оперативной памяти: </string>
+<string name="theme">Тема оформления</string>
+<string name="white">Белая</string>
+<string name="light">Светлая</string>
+<string name="dark">Темная</string>
+<string name="black">Черная</string>
+<string name="high_contrast">Высококонтрастная</string>
+<string name="user_theme">Пользовательская</string>
+<string name="open_skin_editor">ОТКРЫТЬ РЕДАКТОР ТЕМ (ТАКЖЕ ВЫ МОЖЕТЕ ОТКРЫТЬ ФАЙЛ СКИНА)</string>
+<string name="loading_style">Стиль индикатора загрузки</string>
+<string name="align_center">Выравнивание по центру</string>
+<string name="start_page">Стартовая страница</string>
+<string name="auto_start_page">Автоматически выбирать последнюю посещенную веб-страницу</string>
+<string name="bookmarks">ЗАКЛАДКИ</string>
+<string name="start_page_hint">Ссылка на стартовый сайт</string>
+<string name="clean">Очистка</string>
+<string name="at_exit">При выходе</string>
+<string name="clear_search">ОЧИСТИТЬ ИСТОРИЮ ПОИСКА</string>
+<string name="open_history_clean">ІСТОРІЯ ПОСЕЩЕННЫХ ВЕБСАЙТОВ (ВЫ МОЖЕТЕ ЭТО ОЧИСТИТЬ ТАМ)</string>
+<string name="clear_cache">ОЧИСТИТЬ КЭШ</string>
+<string name="clear_cookie">ОЧИСТИТЬ КУКИ</string>
+<string name="clear_autocomp">ОЧИСТИТЬ ДАННЫЕ АВТОЗАПОЛНЕНИЯ</string>
+<string name="block_ad">Блокировка рекламы</string>
+<string name="block_unwanted_sites">Блокировать переход на нежелательные сайты</string>
+<string name="iframe_button">Показывать кнопки возле сайтов в сайте, которые открывают их отдельно</string>
+<string name="skip_video">Пытаться пропускать рекламу у видео</string>
+<string name="skip_video_keywords">Ключевые слова для пропуска видеорекламы (поддерживаются регулярные выражения, писать|слова|через|вертикальную|полосу|без|лишних|пробелов):</string>
+<string name="skip_video_keywords_hint">Пропустить через|Реклама закончится|Реклама [0-9]</string>
+<string name="about">Про разработчика</string>
+<string name="about_dev">Я, кроме браузера, разрабатываю также немало других программ, ни одной из которых нет в Google Play, но есть в моем канале Telegram. Если хотите отправить мне денег (и имеете возможность отправить в украинский ПриватБанк), не стыдитесь кинуть несколько гривен в ПриватБанк, я буду очень благодарен.\n\nРазработка: week_thor\n\nПереводы:
+Украинский, русский, английский: week_thor\n\n</string>
+<string name="copy">КОПИРОВАТЬ</string>
+<string name="private_tg">ПЕРЕЙТИ В ЛИЧНЫЙ ЧАТ С РАЗРАБОТЧИКОМ</string>
+<string name="channel_tg">ПЕРЕЙТИ В КАНАЛ ТЕЛЕГРАММ</string>
+<string name="privatcard">КОПИРОВАТЬ НОМЕР КАРТЫ ПРИВАТБАНК</string>
+<string name="dev_settings">Настройки разработчика</string>
+<string name="show_used_ram">Показать использование ОЗУ</string>
+<string name="force_crash">ПРИНУДИТЕЛЬНЫЙ ВЫЛЕТ</string>
+
+<!-- Settings hints -->
+<string name="hide_panel_hint">Если с каких-либо причин не получается проявить панели, выйдите с браузера и зайдите, самый простой способ — нажать кнопку (или совершить жест) \"Недавние программы □\", и открыть WeekBrowser</string>
+<string name="hide_content_hint">Работает не на всех устройствах, но если все-же это нужно, запретите скриншоты</string>
+<string name="no_thanks">Нет, спасибо</string>
+<string name="cache_hint">Режим \"Стандарт\" часто есть самым оптимальным вариантом.\n\n\"Сначала кэш, потом сеть\" может сэкономить Ваш интернет-траффик, но на некоторых сайтах с динамически обновляемой информацией может не обновлятся информация.\n\n\"Только сеть\" сэкономит Вашу память телефона (кэш не будет сохранятся), но будет больший интернет-траффик.\n\n\"Только кэш\" — это режим, у которой сеть совсем не используется, из-за чего это самая безполезная опция.</string>
+<string name="ram_limit_hint">По стандарту выставлено 3/4 от общей ОЗУ.\n\nЕсли у Вас вкладки часто пропадают с фонового режима, увеличьте лимит, если это возможно.\n\nЕсли у Вас случаются зависания или вылеты из сообщением \"OutOfMemoryError\", попробуйте уменьшить лимит.</string>
+<string name="iframe_button_hint">Это очень недооцененая кнопка, которая может дать возможность смотреть больше видео без рекламы! Если Вы увидите эту []↗ кнопку возле видеоплейера на сайте, рекомендую ее нажать ;)</string>
+<string name="openwith">Открыть через...</string>
+<string name="noopenwith">Нет доступных программ для открытия этого сайта</string>
+
+<!-- Bookmarks and shortcuts activity -->
+
+<string name="typehere">Введите здесь</string>
+<string name="bookmark_name">Название закладки</string>
+<string name="shortcut_name">Название ярлыка</string>
+<string name="link">Ссылка</string>
+<string name="generallink">ОБЫЧНАЯ ССЫЛКА</string>
+<string name="multilink">МУЛЬТИССЫЛКА</string>
+<string name="name_color">Цвет названия</string>
+<string name="add">ДОБАВИТЬ</string>
+<string name="delete">УДАЛИТЬ</string>
+<string name="refresh">ОБНОВИТЬ</string>
+<string name="text_button">ТЕКСТ</string>
+<string name="background_button">ФОН</string>
+<string name="fontsize">Размер шрифта</string>
+<string name="fontweight">Жирность</string>
+<string name="italic">Курсив</string>
+<string name="row_interval">Междустрочный интервал</string>
+<string name="font">Шрифт</string>
+<string name="text_register">Регистр текста</string>
+<string name="all_big">ВСЕ ЗАГЛАВНЫЕ</string>
+<string name="all_small">все строчные</string>
+<string name="capitalize">Каждое Слово С Заглавной</string>
+<string name="text_align">Выравнивание текста</string>
+<string name="textshadowx">Тень: позиция X</string>
+<string name="textshadowy">Позиция Y</string>
+<string name="blur">Размытие</string>
+<string name="color">Цвет</string>
+<string name="alpha">Непрозрачность</string>
+<string name="textborder_size">Обводка букв: толщина</string>
+<string name="wordborder_size">Обводка слов: товщина</string>
+<string name="borderstyle">Стиль обводки</string>
+<string name="filter_brightness">Фильтр: яркость</string>
+<string name="contrast">Контраст</string>
+<string name="saturation">Насыщенность</string>
+<string name="sepia">Сепия</string>
+<string name="invert">Инверсия</string>
+<string name="hue_rotate">Поворот оттенка</string>
+<string name="blend_mode">Тип смешивания</string>
+<string name="text_bg">ТЕКСТ &gt;&gt; ФОН</string>
+<string name="bg_text">ТЕКСТ &lt;&lt; ФОН</string>
+<string name="choose_photo">ВЫБРАТЬ ФОТО</string>
+<string name="remove_photo">ЗАБРАТЬ ФОТО</string>
+<string name="bg_color_choose">УСТАНОВИТЬ ФОН ТЕМЫ</string>
+<string name="img_size">Размер изображения</string>
+<string name="bgborder_size">Обводка фона: толщина</string>
+<string name="design_name">Назва дизайна:</string>
+<string name="importt">ИМПОРТ (ОТКРЫТЬ)</string>
+<string name="export">ЭКСПОРТ (СОХРАНИТЬ)</string>
+<string name="link_button">ССЫЛКА</string>
+<string name="design_button">ДИЗАЙН</string>
+<string name="html_editor">HTML-РЕДАКТОР</string>
+
+<!-- History activity -->
+
+<string name="do_you_want_delete_all">Посля нажатия кнопки \"Да\", Вы очистите эту исторію. Это невозможно возобновить. Вы хотите этого? Подумайте дважды ;)</string>
+<string name="clear_all">ОЧИСТИТЬ ВСЕ</string>
+
+<!-- Useragent activity -->
+
+<string name="if_pc_off">Если режим ПК выключен:</string>
+<string name="if_pc_on">Если режим ПК включен:</string>
+<string name="current_ua">Текущий агент пользователя</string>
+
+<!-- Supermenu activity -->
+
+<string name="element_page">ЭЛЕМЕНТ &gt;&gt; САЙТ</string>
+<string name="page_element">ЭЛЕМЕНТ &lt;&lt; САЙТ</string>
+<string name="textarea_hint">Введите текст, который хотите набрать в выбраное текстовое поле</string>
+<string name="done">ГОТОВО</string>
+<string name="src">Источник элемента</string>
+<string name="href">Ссылка элемента</string>
+<string name="eltext">Текст элемента</string>
+<string name="elcode">Код элемента</string>
+<string name="wtext">Текст сайта</string>
+<string name="wcode">Код сайта</string>
+<string name="download_elem">СКАЧАТЬ ЭЛЕМЕНТ</string>
+<string name="new_tab">НОВАЯ ВКЛАДКА</string>
+<string name="same_tab">ЭТА ЖЕ ВКЛАДКА</string>
+<string name="bg_tab">ФОНОВАЯ ВКЛАДКА</string>
+<string name="share">ПОДЕЛИТСЯ</string>
+<string name="to_dialer">НАБРАТЬ В НОМЕРОНАБИРАТЕЛЬ</string>
+<string name="send_sms">НАПИСАТЬ SMS</string>
+<string name="time_machine">МАШИНА ВРЕМЕНИ</string>
+<string name="add_shortcut">ДОБАВИТЬ ЯРЛЫК</string>
+<string name="text_summar_gpt">Текст сократится с помощью технологии исскуственого интеллекта ChatGPT от OpenAI®</string>
+<string name="words">СЛОВ</string>
+<string name="paragraphs">АБЗАЦЕВ</string>
+<string name="is_ad">ЭТО РЕКЛАМА?</string>
+<string name="is_not_ad">ЭТО НЕ РЕКЛАМА?</string>
+<string name="container">КОНТЕЙНЕР</string>
+<string name="header">ВЕРХНИЙ КОЛОНТИТУЛ</string>
+<string name="body">ОСНОВНОЕ СОДЕРЖАНИЕ</string>
+<string name="htmltitle">ЗАГОЛОВОК</string>
+<string name="text">ТЕКСТ</string>
+<string name="textarea">ТЕКСТОВОЕ ПОЛЕ</string>
+<string name="button">КНОПКА</string>
+<string name="smselect">ВЫПАДАЮЩИЙ СПИСОК</string>
+<string name="smvideo">ВИДЕО</string>
+<string name="sm_svg">ВЕКТОРНОЕ ИЗОБРАЖЕНИЕ</string>
+<string name="sm_path">ВЕКТОР ДЛЯ ВЕКТОРНЫХ ИЗОБРАЖЕНИЙ</string>
+<string name="sm_img">ИЗОБРАЖЕНИЕ</string>
+<string name="sm_iframe">САЙТ В САЙТЕ</string>
+<string name="sm_code">ПРОГРАММНЫЙ КОД</string>
+<string name="sm_obj">ОБЪЕКТ</string>
+<string name="unknown_element">НЕИЗВЕСТНЫЙ ЭЛЕМЕНТ</string>
+
+<!-- Grant activity -->
+
+<string name="grant_title">НУЖНО ДАТЬ НЕСКОЛЬКО РАЗРЕШЕНИЙ!</string>
+<string name="text_with_star">Текстом из звездочкой* обозначены обязательные разрешения. Нажимайте по тексту, чтобы дать разрешения. Зеленым текстом обозначены наданые разрешения</string>
+<string name="memory_access">ДОСТУП К ПАМЯТИ*\nОн 	очень нужен, так как настройки браузера будут сохранятся прямо во внутреней памяти вместе из файлами</string>
+<string name="geolocation">ДОСТУП К МЕСТОНАХОЖДЕНИЮ\nСайты будут знать Ваше точное местоположение (если включить геоданные). Это может быть полезно, например, в веб-навигаторах</string>
+<string name="overlay_grant">ДОСТУП К ТИПУ ОКНА \"ПОВЕРХ ДРУГИХ ПРИЛОЖЕНИЙ\"\nПозволяет размещать видеоплейер на экране, пока браузер скрыт</string>
+
+<!-- Exceptions activity -->
+
+<string name="js_e">JS</string>
+<string name="blockad_e">БЛОК. РЕКЛАМЫ</string>
+<string name="swipe_e">ОБНОВЛ. ПЕРЕТЯГ.</string>
+<string name="redraw_e">ИЗМЕН. ОФОРМЛЕНИЯ</string>
+<string name="frame_e">БЛОК. \"САЙТЫ В САЙТЕ\"</string>
+
+<!-- v5.9 -->
+<string name="jslogon">Включить лог JavaScript в файле \"WeekBrowser/dev/JavaScriptLog.txt\"</string>
+<string name="browser_locked">БРАУЗЕР ЗАБЛОКИРОВАН!\nВВЕДИТЕ ПАРОЛЬ\n(по умолчанию 1111)</string>
+<string name="incorrect_password">Пароль неправильный</string>
+<string name="incorrect_bio">Отпечаток пальца неправильный</string>
+<string name="is_bio_available">Вы также можете разблокировать с помощью отпечатка пальца</string>
+<string name="confidence">Конфиденциальность и безопасность</string>
+<string name="lock_app">Блокировать приложение</string>
+<string name="incognito_lock_only">Только в режиме инкогнито</string>
+<string name="hide_password">Прятать пароль при наборе (показывать случайные числа вместо реально набранных)</string>
+<string name="pin_requirements">PIN-код должен содержать 1-10 цифр</string>
+<string name="wantopen">Вы хотите открыть этот URL в другой программе?</string>
+<string name="dontgrant">Вы не дали нужных разрешений!</string>
+
+<!-- v5.91 -->
+<string name="wantexit">Короткое нажимание — закладки. Или Вы хотите выйти?</string>
+<string name="backbtn">Назад</string>
+<string name="forwardbtn">Вперед</string>
+<string name="homebtn">К верху страницы</string>
+<string name="endbtn">К низу страницы</string>
+<string name="historybtn">История</string>
+<string name="tabsbtn">Вкладки</string>
+<string name="searchonpagebtn">Поиск на странице</string>
+<string name="positionbtn">Менеджер позиций</string>
+<string name="quicksettingsbtn">Быстрые настройки</string>
+<string name="settingsbtn">Общие настройки</string>
+<string name="closebtn">Закрыть</string>
+<string name="copybtn">Копировать</string>
+<string name="pastebtn">Вставить</string>
+<string name="pastesearchbtn">Вставить + искать</string>
+<string name="selallbtn">Выделить все</string>
+<string name="geturlbtn">Получить текущий URL</string>
+<string name="skipvidbtn">Пропустить видео</string>
+
+<!-- v6.0 -->
+<string name="changebtntext">НАЖМИТЕ СЮДА, ЧТОБЫ ИЗМЕНИТЬ ЦВЕТ ТЕКСТА</string>
+<string name="enter_skin_name">ВВЕДИТЕ НАЗВАНИЕ СКИНА</string>
+<string name="general_buttons">ОБЫЧНЫЕ КНОПКИ</string>
+<string name="red_buttons">КРАСНЫЕ КНОПКИ</string>
+<string name="background">ФОН</string>
+<string name="text_and_other">ТЕКСТ И ПРОЧЕЕ</string>
+<string name="export_wesk">ЭКСПОРТ</string>
+<string name="reverse">ЗАДОМ НАПЕРЕД</string>
+<string name="all_up">ВСЕ ВЫШЕ</string>
+<string name="all_down">ВСЕ НИЖЕ</string>
+<string name="shuffle">ПЕРЕМЕШАТЬ</string>
+<string name="gradient">Градиент</string>
+<string name="num_of_seg">Количество сегментов</string>
+<string name="sharpness">Резкость</string>
+<string name="center_x">Центр X</string>
+<string name="center_y">Центр Y</string>
+<string name="radius">Радиус</string>
+<string name="big_roundness">Закругление больших кнопок</string>
+<string name="small_roundness">Закругление маленьких кнопок</string>
+<string name="udlinear">Линейный сверху вниз</string>
+<string name="lrlinear">Линейный слева направо</string>
+<string name="diaglin1">Диагональный линейный №1</string>
+<string name="diaglin2">Диагональный линейный №2</string>
+<string name="radial">Радиальный (нестабильно!)</string>
+<string name="sweep">Угловой</string>
+<string name="textcol">Цвет текста</string>
+<string name="textareacol">Цвет текстового поля</string>
+<string name="addtextcol">Цвет дополнительного текста</string>
+<string name="hintcol">Цвет подсказок</string>
+<string name="compcol">Цвет композитных (?) кнопок\n(Android 5.0+)</string>
+<string name="trackcol">Цвет заполнения ползунка\n(Android 5.0+)</string>
+<string name="thumbcol">Цвет держалки ползунка\n(Android 5.0+)</string>
+<string name="choose_style">Стиль (необходима перезагрузка)</string>
+<string name="color_no">Цвет №</string>
+<string name="android12warning">Палитра (и, соответственно, потенциально Ваш скин) ниже может менять цвет сама по себе, если Вы смените системные обои. Работает только на Android 12+, иначе только Вы будете видеть стандартную неволшебную палитру</string>
+
+
+
+
+</resources>
