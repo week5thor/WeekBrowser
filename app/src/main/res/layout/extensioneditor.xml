@@ -1,0 +1,123 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<TextView
+		android:id="@+id/name"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:gravity="center_horizontal"
+		android:text="TextView"
+		android:textSize="18sp"
+		android:textStyle="bold|italic"
+		android:textColor="#000000" />
+	<TextView
+		android:id="@+id/dis"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:gravity="center_horizontal"
+		android:text="@string/disabled"
+		android:textSize="14sp"
+		android:textStyle="bold|italic"
+		android:textColor="#000000" />
+	<LinearLayout
+		android:id="@+id/linear2"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginBottom="5dp"
+		android:padding="8dp"
+		android:orientation="horizontal"
+		android:layout_weight="1">
+		<ScrollView
+			android:id="@+id/js"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1">
+			<LinearLayout
+				android:id="@+id/linear1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+				<TextView
+					android:id="@+id/textview1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text=" On page start"
+					android:textSize="12sp"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/edittext1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="left|top"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="Edit Text"
+					android:textColorHint="#607D8B" />
+				<TextView
+					android:id="@+id/textview2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text=" On page finish"
+					android:textSize="12sp"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/edittext2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="left|top"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:hint="Edit Text"
+					android:textColorHint="#607D8B" />
+			</LinearLayout>
+		</ScrollView>
+		<LinearLayout
+			android:id="@+id/inter"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:layout_weight="1">
+			<TextView
+				android:id="@+id/textview3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text=" Intercept request"
+				android:textSize="12sp"
+				android:textColor="#000000" />
+			<Button
+				android:id="@+id/button1"
+				android:layout_width="match_parent"
+				android:layout_height="30dp"
+				android:padding="8dp"
+				android:text="+ ADD"
+				android:textSize="12sp"
+				android:textColor="#000000" />
+			<ListView
+				android:id="@+id/listview1"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:choiceMode="none"
+				android:focusable="false" />
+		</LinearLayout>
+	</LinearLayout>
+	<Button
+		android:id="@+id/switchtab"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:padding="8dp"
+		android:text="Javascript → Intercept request"
+		android:textSize="12sp"
+		android:textColor="#000000" />
+</LinearLayout>
