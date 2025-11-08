@@ -1,0 +1,126 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<ListView
+		android:id="@+id/listview1"
+		android:layout_width="match_parent"
+		android:layout_height="200dp"
+		android:padding="8dp"
+		android:choiceMode="none" />
+	<ScrollView
+		android:id="@+id/vscroll1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<LinearLayout
+			android:id="@+id/linear1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/title"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal"
+				android:text="@string/animsettings"
+				android:textSize="18sp"
+				android:textStyle="bold|italic"
+				android:textColor="#000000" />
+			<TextView
+				android:id="@+id/listanimt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="@string/listanim"
+				android:textSize="12sp"
+				android:textColor="#000000" />
+			<Spinner
+				android:id="@+id/lap"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:spinnerMode="dropdown" />
+			<Spinner
+				android:id="@+id/lai"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:spinnerMode="dropdown" />
+			<TextView
+				android:id="@+id/bpanimt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="@string/bpanim"
+				android:textSize="12sp"
+				android:textColor="#000000" />
+			<Spinner
+				android:id="@+id/bap"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:spinnerMode="dropdown" />
+			<Spinner
+				android:id="@+id/bai"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:spinnerMode="dropdown" />
+			<TextView
+				android:id="@+id/spanimt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="@string/spanim"
+				android:textSize="12sp"
+				android:textColor="#000000" />
+			<Spinner
+				android:id="@+id/sap"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:spinnerMode="dropdown" />
+			<Spinner
+				android:id="@+id/sai"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:spinnerMode="dropdown" />
+			<Button
+				android:id="@+id/ssh"
+				android:layout_width="match_parent"
+				android:layout_height="30dp"
+				android:layout_marginTop="2dp"
+				android:padding="8dp"
+				android:text="SHOW/HIDE"
+				android:textSize="12sp"
+				android:textColor="#000000" />
+			<TextView
+				android:id="@+id/textview1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#FFFFFF"
+				android:text="Small example"
+				android:textSize="12sp"
+				android:textColor="#000000" />
+			<Button
+				android:id="@+id/bsh"
+				android:layout_width="match_parent"
+				android:layout_height="30dp"
+				android:layout_marginTop="2dp"
+				android:padding="8dp"
+				android:text="SHOW/HIDE"
+				android:textSize="12sp"
+				android:textColor="#000000" />
+			<TextView
+				android:id="@+id/textview2"
+				android:layout_width="match_parent"
+				android:layout_height="100dp"
+				android:padding="8dp"
+				android:background="#FFFFFF"
+				android:text="Big example"
+				android:textSize="12sp"
+				android:textColor="#000000" />
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

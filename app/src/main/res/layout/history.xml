@@ -1,0 +1,105 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear3"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/linear1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:background="#000000"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/numofelem"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Зберігати 1000 елементів"
+				android:textSize="12sp"
+				android:textColor="#FF0070" />
+			<TextView
+				android:id="@+id/hintt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Наразі збережено 99999 елементів, і займають 999 МБ"
+				android:textSize="12sp"
+				android:textColor="#7000FF" />
+			<SeekBar
+				android:id="@+id/seekbar1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:progress="8"
+				android:max="26" />
+			<CheckBox
+				android:id="@+id/time"
+				android:layout_width="wrap_content"
+				android:layout_height="30dp"
+				android:padding="8dp"
+				android:text="@string/time"
+				android:textSize="12sp"
+				android:textColor="#FFFFFF" />
+			<LinearLayout
+				android:id="@+id/linear5"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<CheckBox
+					android:id="@+id/regex"
+					android:layout_width="wrap_content"
+					android:layout_height="30dp"
+					android:text=".*"
+					android:textSize="12sp"
+					android:textColor="#FFFFFF" />
+				<AutoCompleteTextView
+					android:id="@+id/autocomplete2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:textSize="12sp"
+					android:textColor="#00FF00"
+					android:hint="Пошук"
+					android:textColorHint="#7000FF" />
+			</LinearLayout>
+			<Button
+				android:id="@+id/deletee"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:background="#FF0000"
+				android:text="@string/clear_all"
+				android:textSize="12sp"
+				android:textColor="#000000"
+				android:layout_gravity="left" />
+		</LinearLayout>
+		<Button
+			android:id="@+id/showhide"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:background="#00FF00"
+			android:text="▽▼▼▼▼▼▽"
+			android:textSize="12sp"
+			android:textColor="#000000" />
+		<ListView
+			android:id="@+id/listview1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:dividerHeight="0dp"
+			android:divider="@null"
+			android:choiceMode="none" />
+		<ListView
+			android:id="@+id/listview2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:choiceMode="none" />
+	</LinearLayout>
+</LinearLayout>

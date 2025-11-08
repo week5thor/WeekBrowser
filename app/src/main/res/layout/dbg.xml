@@ -1,0 +1,236 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<ScrollView
+		android:id="@+id/vscroll2"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="8dp">
+		<LinearLayout
+			android:id="@+id/linear1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/name"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal"
+				android:text="DIALOG BACKGROUND SETTINGS"
+				android:textSize="18sp"
+				android:textStyle="bold|italic"
+				android:textColor="#00FF00" />
+			<CheckBox
+				android:id="@+id/don"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Apply new dialog background (Android 12+)"
+				android:textSize="12sp"
+				android:textColor="#000000" />
+			<TextView
+				android:id="@+id/blur"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="@string/blur"
+				android:textSize="12sp"
+				android:textColor="#FFFFFF" />
+			<TextView
+				android:id="@+id/bxind"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="0.0"
+				android:textSize="18sp"
+				android:textStyle="bold|italic"
+				android:textColor="#000000" />
+			<SeekBar
+				android:id="@+id/bx"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:max="30" />
+			<TextView
+				android:id="@+id/byind"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="0.0"
+				android:textSize="18sp"
+				android:textStyle="bold|italic"
+				android:textColor="#000000" />
+			<SeekBar
+				android:id="@+id/by"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:max="30" />
+			<TextView
+				android:id="@+id/huerotate"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="@string/hue_rotate"
+				android:textSize="12sp"
+				android:textColor="#FFFFFF" />
+			<TextView
+				android:id="@+id/rrind"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="0.0"
+				android:textSize="18sp"
+				android:textStyle="bold|italic"
+				android:textColor="#000000" />
+			<SeekBar
+				android:id="@+id/rr"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:max="359" />
+			<TextView
+				android:id="@+id/rgind"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="0.0"
+				android:textSize="18sp"
+				android:textStyle="bold|italic"
+				android:textColor="#000000" />
+			<SeekBar
+				android:id="@+id/rg"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:max="359" />
+			<TextView
+				android:id="@+id/rbind"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="0.0"
+				android:textSize="18sp"
+				android:textStyle="bold|italic"
+				android:textColor="#000000" />
+			<SeekBar
+				android:id="@+id/rb"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:max="359" />
+			<TextView
+				android:id="@+id/saturation"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="@string/saturation"
+				android:textSize="12sp"
+				android:textColor="#FFFFFF" />
+			<TextView
+				android:id="@+id/satind"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="0.0"
+				android:textSize="18sp"
+				android:textStyle="bold|italic"
+				android:textColor="#000000" />
+			<SeekBar
+				android:id="@+id/sat"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp" />
+			<TextView
+				android:id="@+id/brightness"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="@string/filter_brightness"
+				android:textSize="12sp"
+				android:textColor="#FFFFFF" />
+			<TextView
+				android:id="@+id/vrind"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="0.0"
+				android:textSize="18sp"
+				android:textStyle="bold|italic"
+				android:textColor="#000000" />
+			<SeekBar
+				android:id="@+id/vr"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:max="30" />
+			<TextView
+				android:id="@+id/vgind"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="0.0"
+				android:textSize="18sp"
+				android:textStyle="bold|italic"
+				android:textColor="#000000" />
+			<SeekBar
+				android:id="@+id/vg"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:max="30" />
+			<TextView
+				android:id="@+id/vbind"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="0.0"
+				android:textSize="18sp"
+				android:textStyle="bold|italic"
+				android:textColor="#000000" />
+			<SeekBar
+				android:id="@+id/vb"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:max="30" />
+			<TextView
+				android:id="@+id/alpha"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="@string/alpha"
+				android:textSize="12sp"
+				android:textColor="#FFFFFF" />
+			<TextView
+				android:id="@+id/alpind"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="0.0"
+				android:textSize="18sp"
+				android:textStyle="bold|italic"
+				android:textColor="#000000" />
+			<SeekBar
+				android:id="@+id/alp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp" />
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
