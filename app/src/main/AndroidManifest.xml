@@ -1,0 +1,549 @@
+
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.a525team.weekbrowser">
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	<uses-permission android:name="android.permission.USE_FINGERPRINT" />
+	<uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO"/><uses-feature android:name="android.hardware.microphone" android:required="false" />
+	<application
+		android:allowBackup="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:name=".SketcApplication"
+		android:requestLegacyExternalStorage="true"
+		android:largeHeap="true"
+		android:usesCleartextTraffic="true"
+		android:theme="@android:style/Theme.Black">
+		<activity
+			android:name=".MainActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTask"
+			android:exported="true"
+			android:theme="@android:style/Theme.Black">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".HomeActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@style/NoActionBar"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".SettingsActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTask"
+			android:theme="@style/NoActionBar" />
+		<activity
+			android:name=".BookmarksActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@style/NoActionBar" />
+		<activity
+			android:name=".HistoryActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@style/NoActionBar" />
+		<activity
+			android:name=".UseragentActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@style/NoActionBar" />
+		<activity
+			android:name=".CustomthemeActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@style/NoActionBar" />
+		<activity
+			android:name=".SsuperactivityActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTask"
+			android:theme="@style/NoActionBar" />
+		<activity
+			android:name=".ReplaceActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".IntentActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:exported="true"
+			android:theme="@android:style/Theme.Black">
+<!-- Відкривання URL (браузер за замовчуванням) -->
+<intent-filter>
+    <action android:name="android.intent.action.VIEW" />
+    <category android:name="android.intent.category.DEFAULT" />
+    <category android:name="android.intent.category.BROWSABLE" />
+    <data android:scheme="http" />
+    <data android:scheme="https" />
+    <data android:scheme="javascript" />
+</intent-filter>
+
+<!-- Підтримка "Поділитися посиланням" -->
+<intent-filter>
+    <action android:name="android.intent.action.SEND" />
+    <category android:name="android.intent.category.DEFAULT" />
+    <data android:mimeType="text/plain" />
+</intent-filter>
+
+<!-- Підтримка відкриття файлів (у т.ч. content:// URI) -->
+<intent-filter>
+    <action android:name="android.intent.action.VIEW" />
+    <category android:name="android.intent.category.DEFAULT" />
+    <category android:name="android.intent.category.BROWSABLE" />
+    <data android:scheme="file" />
+    <data android:scheme="content" />
+    <data android:mimeType="application/x-mimearchive" />
+    <data android:mimeType="message/rfc822" />
+    <data android:mimeType="application/octet-stream" />
+    <data android:mimeType="text/html" />
+    <data android:mimeType="text/*" />
+</intent-filter>
+
+<!-- Спеціально для файлів .mht -->
+<intent-filter android:priority="99999999">
+<!-- Моя боротьба за дев\'ятки -->
+    <action android:name="android.intent.action.VIEW" />
+    <category android:name="android.intent.category.DEFAULT" />
+    <category android:name="android.intent.category.BROWSABLE" />
+    <data android:scheme="file" />
+    <data android:scheme="content" />
+    <data android:mimeType="application/x-mimearchive" />
+    <data android:pathPattern=".*\\.mht" />
+</intent-filter>
+
+</activity>
+		<activity
+			android:name=".GrantActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTask"
+			android:theme="@android:style/Theme.Black"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".ShortcutActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:windowSoftInputMode="stateHidden"
+			android:hardwareAccelerated="true"
+			android:theme="@style/NoActionBar"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".ExceptionsActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:launchMode="singleTask"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme" />
+		<activity
+			android:name=".DebugActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".LockActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@style/NoActionBar"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".ExtensionsActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:theme="@style/NoActionBar"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".ExtensioneditorActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".LoadresActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".AnimActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".TextActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:theme="@android:style/Theme.Black"
+			android:windowSoftInputMode="stateHidden"
+			android:exported="true"
+			android:launchMode="singleTask"
+			android:excludeFromRecents="false"
+			android:taskAffinity="com.a525team.weekbrowser.text"
+			> <intent-filter android:icon="@mipmap/weekedit" android:label="WeekEdit"> <action android:name="android.intent.action.VIEW" /> <action android:name="android.intent.action.EDIT" /> <category android:name="android.intent.category.DEFAULT" /> <data android:scheme="file" /> <data android:scheme="content" /> <data android:mimeType="text/*" /> <data android:mimeType="plain/*" /> <data android:mimeType="text/javascript" /> <data android:mimeType="text/java" /> <data android:mimeType="text/smali" /> <data android:mimeType="text/xml" /> <data android:mimeType="application/ecmascript" /> <data android:mimeType="application/javascript" /> <!-- фільтри взято з MW CodeEdit --> </intent-filter>  </activity>
+		<activity
+			android:name=".DbgActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:supportsPictureInPicture="true"
+			android:theme="@style/NoActionBar"
+			android:windowSoftInputMode="stateHidden" />
+		<activity
+			android:name=".BarsActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:supportsPictureInPicture="true"
+			android:theme="@style/NoActionBar"
+			android:windowSoftInputMode="stateHidden" />
+<activity-alias
+android:name=".AliasLogo1"
+android:icon="@mipmap/modern_blue"
+android:label="@string/app_name"
+android:targetActivity=".MainActivity"
+android:enabled="false"
+android:exported="true">
+<intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity-alias>
+
+
+<activity-alias
+android:name=".AliasLogo2"
+android:icon="@mipmap/modern_blue_2"
+android:label="@string/app_name"
+android:targetActivity=".MainActivity"
+android:enabled="false"
+android:exported="true">
+<intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity-alias>
+
+<activity-alias
+android:name=".AliasLogo3"
+android:icon="@mipmap/modern_blue_3"
+android:label="@string/app_name"
+android:targetActivity=".MainActivity"
+android:enabled="false"
+android:exported="true">
+<intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity-alias>
+
+<activity-alias
+android:name=".AliasLogo4"
+android:icon="@mipmap/sunrise"
+android:label="@string/app_name"
+android:targetActivity=".MainActivity"
+android:enabled="false"
+android:exported="true">
+<intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity-alias>
+
+<activity-alias
+android:name=".AliasLogo5"
+android:icon="@mipmap/sunset"
+android:label="@string/app_name"
+android:targetActivity=".MainActivity"
+android:enabled="false"
+android:exported="true">
+<intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity-alias>
+
+<activity-alias
+android:name=".AliasLogo6"
+android:icon="@mipmap/dark"
+android:label="@string/app_name"
+android:targetActivity=".MainActivity"
+android:enabled="false"
+android:exported="true">
+<intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity-alias>
+
+<activity-alias
+android:name=".AliasLogo7"
+android:icon="@mipmap/neon"
+android:label="@string/app_name"
+android:targetActivity=".MainActivity"
+android:enabled="false"
+android:exported="true">
+<intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity-alias>
+
+<activity-alias
+android:name=".AliasLogo8"
+android:icon="@mipmap/neon_green"
+android:label="@string/app_name"
+android:targetActivity=".MainActivity"
+android:enabled="false"
+android:exported="true">
+<intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity-alias>
+
+<activity-alias
+android:name=".AliasLogo9"
+android:icon="@mipmap/classic"
+android:label="@string/app_name"
+android:targetActivity=".MainActivity"
+android:enabled="false"
+android:exported="true">
+<intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity-alias>
+
+<activity-alias
+android:name=".AliasLogo10"
+android:icon="@mipmap/white"
+android:label="@string/app_name"
+android:targetActivity=".MainActivity"
+android:enabled="false"
+android:exported="true">
+<intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity-alias>
+
+<activity-alias
+android:name=".AliasLogo11"
+android:icon="@mipmap/black"
+android:label="@string/app_name"
+android:targetActivity=".MainActivity"
+android:enabled="false"
+android:exported="true">
+<intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity-alias>
+
+
+
+<activity-alias
+android:name=".AliasLogo12"
+android:icon="@mipmap/blackwhite"
+android:label="@string/app_name"
+android:targetActivity=".MainActivity"
+android:enabled="false"
+android:exported="true">
+<intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity-alias>
+
+<activity-alias
+android:name=".AliasLogo13"
+android:icon="@mipmap/sepia"
+android:label="@string/app_name"
+android:targetActivity=".MainActivity"
+android:enabled="false"
+android:exported="true">
+<intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity-alias>
+
+
+<activity-alias
+android:name=".AliasLogo14"
+android:icon="@mipmap/lime"
+android:label="@string/app_name"
+android:targetActivity=".MainActivity"
+android:enabled="false"
+android:exported="true">
+<intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity-alias>
+
+
+<activity-alias
+android:name=".AliasLogo15"
+android:icon="@mipmap/colorful"
+android:label="@string/app_name"
+android:targetActivity=".MainActivity"
+android:enabled="false"
+android:exported="true">
+<intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity-alias>
+
+
+<activity-alias
+android:name=".AliasLogo16"
+android:icon="@mipmap/energy_red"
+android:label="@string/app_name"
+android:targetActivity=".MainActivity"
+android:enabled="false"
+android:exported="true">
+<intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity-alias>
+
+
+<activity-alias
+android:name=".AliasLogo17"
+android:icon="@mipmap/cyber_red"
+android:label="@string/app_name"
+android:targetActivity=".MainActivity"
+android:enabled="false"
+android:exported="true">
+<intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity-alias>
+
+
+<activity-alias
+android:name=".AliasLogo18"
+android:icon="@mipmap/pastel"
+android:label="@string/app_name"
+android:targetActivity=".MainActivity"
+android:enabled="false"
+android:exported="true">
+<intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity-alias>
+
+<activity-alias
+android:name=".AliasLogo19"
+android:icon="@mipmap/latex"
+android:label="@string/app_name"
+android:targetActivity=".MainActivity"
+android:enabled="false"
+android:exported="true">
+<intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity-alias>
+
+<activity-alias
+android:name=".AliasLogo20"
+android:icon="@mipmap/monet_dark"
+android:label="@string/app_name"
+android:targetActivity=".MainActivity"
+android:enabled="false"
+android:exported="true">
+<intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity-alias>
+
+<activity-alias
+android:name=".AliasLogo21"
+android:icon="@mipmap/pixel"
+android:label="@string/app_name"
+android:targetActivity=".MainActivity"
+android:enabled="false"
+android:exported="true">
+<intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity-alias>
+
+<activity-alias
+android:name=".AliasLogo22"
+android:icon="@mipmap/pixel_bw"
+android:label="@string/app_name"
+android:targetActivity=".MainActivity"
+android:enabled="false"
+android:exported="true">
+<intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity-alias>
+
+<activity-alias
+android:name=".AliasLogo23"
+android:icon="@mipmap/pixel_sepia"
+android:label="@string/app_name"
+android:targetActivity=".MainActivity"
+android:enabled="false"
+android:exported="true">
+<intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity-alias>
+
+
+
+
+
+
+
+
+
+	</application>
+</manifest>

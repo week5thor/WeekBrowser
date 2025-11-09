@@ -1,0 +1,170 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/bg"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/linear1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<LinearLayout
+				android:id="@+id/linear2"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:layout_weight="1">
+				<TextView
+					android:id="@+id/request"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="@string/requestdd"
+					android:textSize="18sp"
+					android:textStyle="bold|italic"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/textview1"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="8dp"
+					android:paddingTop="8dp"
+					android:paddingRight="8dp"
+					android:paddingBottom="16dp"
+					android:text="Headers"
+					android:textSize="12sp"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/url"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="8dp"
+					android:paddingTop="8dp"
+					android:paddingRight="8dp"
+					android:paddingBottom="16dp"
+					android:text="URL"
+					android:textSize="12sp"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/method"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="8dp"
+					android:paddingTop="8dp"
+					android:paddingRight="8dp"
+					android:paddingBottom="16dp"
+					android:text="Method"
+					android:textSize="12sp"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/headers"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="8dp"
+					android:paddingTop="8dp"
+					android:paddingRight="8dp"
+					android:paddingBottom="16dp"
+					android:text="Headers"
+					android:textSize="12sp"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/ismf"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="8dp"
+					android:paddingTop="8dp"
+					android:paddingRight="8dp"
+					android:paddingBottom="16dp"
+					android:text="Is main frame"
+					android:textSize="12sp"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/response"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="@string/responsedd"
+					android:textSize="18sp"
+					android:textStyle="bold|italic"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/mime"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="8dp"
+					android:paddingTop="8dp"
+					android:paddingRight="8dp"
+					android:paddingBottom="16dp"
+					android:text="MIME"
+					android:textSize="12sp"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/errc"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="8dp"
+					android:paddingTop="8dp"
+					android:paddingRight="8dp"
+					android:paddingBottom="16dp"
+					android:text="Err code"
+					android:textSize="12sp"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/errp"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Err phrase"
+					android:textSize="12sp"
+					android:textColor="#000000" />
+				<LinearLayout
+					android:id="@+id/linear3"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="horizontal">
+					<Button
+						android:id="@+id/adv"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="is ad"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:layout_weight="1" />
+					<Button
+						android:id="@+id/download"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:text="@string/download_elem"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:layout_weight="1" />
+				</LinearLayout>
+			</LinearLayout>
+			<WebView
+				android:id="@+id/webview1"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
