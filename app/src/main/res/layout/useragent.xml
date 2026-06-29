@@ -1,0 +1,77 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<ScrollView
+		android:id="@+id/vscroll1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<LinearLayout
+			android:id="@+id/linear1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:orientation="vertical">
+			<com.a525team.weekbrowser.SkinTextView
+				android:id="@+id/name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="@string/open_useragent"
+				android:textSize="18sp"
+				android:textStyle="bold|italic"
+				android:layout_gravity="center_horizontal" />
+			<com.a525team.weekbrowser.SkinTextView
+				android:id="@+id/textview2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="@string/if_pc_off"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				android:layout_gravity="center_horizontal"
+				app:skinKey="add" />
+			<Spinner
+				android:id="@+id/spinner1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:spinnerMode="dropdown"
+				tools:listitem="@layout/useragentt" />
+			<com.a525team.weekbrowser.SkinAutoCompleteTextView
+				android:id="@+id/autocomplete1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:textSize="12sp"
+				android:hint="@string/current_ua" />
+			<com.a525team.weekbrowser.SkinTextView
+				android:id="@+id/textview3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="@string/if_pc_on"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				android:layout_gravity="center_horizontal"
+				app:skinKey="add" />
+			<Spinner
+				android:id="@+id/spinner2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:spinnerMode="dropdown"
+				tools:listitem="@layout/useragentt" />
+			<com.a525team.weekbrowser.SkinAutoCompleteTextView
+				android:id="@+id/autocomplete3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:textSize="12sp"
+				android:hint="@string/current_ua" />
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

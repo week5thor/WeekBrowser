@@ -1,0 +1,330 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<ScrollView
+		android:id="@+id/vscroll1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<LinearLayout
+			android:id="@+id/linear8"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:orientation="vertical">
+			<com.a525team.weekbrowser.SkinTextView
+				android:id="@+id/title"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="@string/bars_setting"
+				android:textSize="18sp"
+				android:textStyle="bold|italic" />
+			<com.a525team.weekbrowser.SkinTextView
+				android:id="@+id/st1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="@string/general"
+				android:textSize="18sp"
+				android:textStyle="bold" />
+			<com.a525team.weekbrowser.SkinCheckBox
+				android:id="@+id/showsearch"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="@string/show_search_panel"
+				android:textSize="12sp" />
+			<com.a525team.weekbrowser.SkinCheckBox
+				android:id="@+id/searchtop"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="@string/search_panel_top"
+				android:textSize="12sp" />
+			<LinearLayout
+				android:id="@+id/linear10"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<com.a525team.weekbrowser.SkinCheckBox
+					android:id="@+id/hidescroll"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="@string/hide_panels"
+					android:textSize="12sp"
+					android:layout_weight="1" />
+				<com.a525team.weekbrowser.SkinButton
+					android:id="@+id/hidehint"
+					android:layout_width="30dp"
+					android:layout_height="match_parent"
+					android:padding="8dp"
+					android:text="\?"
+					android:textSize="12sp"
+					app:isSmall="true" />
+			</LinearLayout>
+			<com.a525team.weekbrowser.SkinTextView
+				android:id="@+id/sst"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="@string/buttons_size"
+				android:textSize="12sp" />
+			<com.a525team.weekbrowser.SkinSeekBar
+				android:id="@+id/size"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:max="40" />
+			<com.a525team.weekbrowser.SkinTextView
+				android:id="@+id/st2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="@string/tool_bar"
+				android:textSize="18sp"
+				android:textStyle="bold" />
+			<com.a525team.weekbrowser.SkinCheckBox
+				android:id="@+id/showtool"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="@string/show_tools_panel"
+				android:textSize="12sp" />
+			<com.a525team.weekbrowser.SkinCheckBox
+				android:id="@+id/tooltop"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="@string/tools_panel_top"
+				android:textSize="12sp" />
+			<com.a525team.weekbrowser.SkinCheckBox
+				android:id="@+id/dots"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="@string/tool_bar_dot"
+				android:textSize="12sp" />
+			<HorizontalScrollView
+				android:id="@+id/hscroll2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<LinearLayout
+					android:id="@+id/linear9"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:paddingTop="16dp"
+					android:paddingBottom="16dp"
+					android:orientation="horizontal" />
+			</HorizontalScrollView>
+			<LinearLayout
+				android:id="@+id/divider3"
+				android:layout_width="match_parent"
+				android:layout_height="4dp"
+				android:padding="8dp"
+				android:background="#000000"
+				android:orientation="horizontal" />
+			<LinearLayout
+				android:id="@+id/linear4"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<com.a525team.weekbrowser.SkinTextView
+					android:id="@+id/sst2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Click action: "
+					android:textSize="12sp"
+					app:skinKey="add" />
+				<com.a525team.weekbrowser.SkinEditText
+					android:id="@+id/click"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:textSize="12sp"
+					android:hint="-990"
+					android:inputType="numberSigned" />
+				<com.a525team.weekbrowser.SkinButton
+					android:id="@+id/clickmore"
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:padding="8dp"
+					android:text=""
+					android:textSize="12sp"
+					app:isSmall="true" />
+				<com.a525team.weekbrowser.SkinTextView
+					android:id="@+id/clickhint"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="TextView"
+					android:textSize="12sp"
+					app:skinKey="add" />
+			</LinearLayout>
+			<com.a525team.weekbrowser.SkinEditText
+				android:id="@+id/clickarg"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:textSize="12sp"
+				android:hint="_s" />
+			<LinearLayout
+				android:id="@+id/divider"
+				android:layout_width="match_parent"
+				android:layout_height="4dp"
+				android:padding="8dp"
+				android:background="#000000"
+				android:orientation="horizontal" />
+			<LinearLayout
+				android:id="@+id/linear5"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<com.a525team.weekbrowser.SkinTextView
+					android:id="@+id/sst3"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Long click action: "
+					android:textSize="12sp"
+					app:skinKey="add" />
+				<com.a525team.weekbrowser.SkinEditText
+					android:id="@+id/longclick"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:textSize="12sp"
+					android:hint="-990"
+					android:inputType="numberSigned" />
+				<com.a525team.weekbrowser.SkinButton
+					android:id="@+id/longclickmore"
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:padding="8dp"
+					android:text=""
+					android:textSize="12sp"
+					app:isSmall="true" />
+				<com.a525team.weekbrowser.SkinTextView
+					android:id="@+id/longclickhint"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="TextView"
+					android:textSize="12sp"
+					app:skinKey="add" />
+			</LinearLayout>
+			<com.a525team.weekbrowser.SkinEditText
+				android:id="@+id/longarg"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:textSize="12sp"
+				android:hint="_s" />
+			<LinearLayout
+				android:id="@+id/divider2"
+				android:layout_width="match_parent"
+				android:layout_height="4dp"
+				android:padding="8dp"
+				android:background="#000000"
+				android:orientation="horizontal" />
+			<LinearLayout
+				android:id="@+id/linear6"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<com.a525team.weekbrowser.SkinTextView
+					android:id="@+id/sst4"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Icon: "
+					android:textSize="12sp"
+					app:skinKey="add" />
+				<com.a525team.weekbrowser.SkinEditText
+					android:id="@+id/icon"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:textSize="12sp"
+					android:hint="-&gt;" />
+				<com.a525team.weekbrowser.SkinButton
+					android:id="@+id/iconmore"
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:padding="8dp"
+					android:text=""
+					android:textSize="12sp"
+					app:isSmall="true" />
+				<com.a525team.weekbrowser.SkinButton
+					android:id="@+id/recicon"
+					android:layout_width="40dp"
+					android:layout_height="match_parent"
+					android:padding="8dp"
+					android:textSize="14sp"
+					app:skinKey="rbg"
+					app:isSmall="true" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="2dp"
+				android:orientation="horizontal">
+				<com.a525team.weekbrowser.SkinButton
+					android:id="@+id/left"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:padding="8dp"
+					android:text=""
+					android:textSize="25sp"
+					android:layout_weight="1" />
+				<com.a525team.weekbrowser.SkinButton
+					android:id="@+id/right"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:padding="8dp"
+					android:text=""
+					android:textSize="25sp"
+					android:layout_weight="1" />
+				<com.a525team.weekbrowser.SkinButton
+					android:id="@+id/add"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:padding="8dp"
+					android:text=""
+					android:textSize="25sp"
+					android:layout_weight="1" />
+				<com.a525team.weekbrowser.SkinButton
+					android:id="@+id/remove"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:padding="8dp"
+					android:text=""
+					android:textSize="25sp"
+					android:layout_weight="1"
+					app:skinKey="rbg" />
+			</LinearLayout>
+			<com.a525team.weekbrowser.SkinEditText
+				android:id="@+id/direct"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:textSize="12sp"
+				android:hint="Edit Text" />
+			<LinearLayout
+				android:id="@+id/linear11"
+				android:layout_width="match_parent"
+				android:layout_height="700dp"
+				android:padding="8dp"
+				android:orientation="vertical" />
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

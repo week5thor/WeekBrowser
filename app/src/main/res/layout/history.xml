@@ -1,0 +1,100 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear3"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/linear1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:orientation="vertical">
+			<com.a525team.weekbrowser.SkinTextView
+				android:id="@+id/numofelem"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Зберігати 1000 елементів"
+				android:textSize="12sp"
+				app:skinKey="add" />
+			<com.a525team.weekbrowser.SkinTextView
+				android:id="@+id/hintt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Наразі збережено 99999 елементів, і займають 999 МБ"
+				android:textSize="12sp"
+				app:skinKey="h" />
+			<com.a525team.weekbrowser.SkinSeekBar
+				android:id="@+id/seekbar1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:progress="8"
+				android:max="26" />
+			<com.a525team.weekbrowser.SkinCheckBox
+				android:id="@+id/time"
+				android:layout_width="wrap_content"
+				android:layout_height="30dp"
+				android:padding="8dp"
+				android:text="@string/time"
+				android:textSize="12sp"
+				android:textColor="#FFFFFF" />
+			<LinearLayout
+				android:id="@+id/linear5"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<com.a525team.weekbrowser.SkinCheckBox
+					android:id="@+id/regex"
+					android:layout_width="wrap_content"
+					android:layout_height="30dp"
+					android:text=".*"
+					android:textSize="12sp"
+					android:textColor="#FFFFFF" />
+				<com.a525team.weekbrowser.SkinAutoCompleteTextView
+					android:id="@+id/autocomplete2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:textSize="12sp"
+					android:hint="Пошук" />
+			</LinearLayout>
+			<com.a525team.weekbrowser.SkinButton
+				android:id="@+id/deletee"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:text="@string/clear_all"
+				android:textSize="12sp"
+				android:layout_gravity="left" />
+		</LinearLayout>
+		<com.a525team.weekbrowser.SkinButton
+			android:id="@+id/showhide"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:text="▽▼▼▼▼▼▽"
+			android:textSize="12sp" />
+		<ListView
+			android:id="@+id/listview1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:dividerHeight="0dp"
+			android:divider="@null"
+			android:choiceMode="none"
+			tools:listitem="@layout/histori" />
+		<ListView
+			android:id="@+id/listview2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:choiceMode="none"
+			tools:listitem="@layout/histori" />
+	</LinearLayout>
+</LinearLayout>

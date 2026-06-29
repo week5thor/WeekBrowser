@@ -1,0 +1,84 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<com.a525team.weekbrowser.SkinTextView
+			android:id="@+id/url"
+			android:focusable="false"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="https://www.example.com"
+			android:textSize="12sp" />
+		<LinearLayout
+			android:id="@+id/linear3"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<com.a525team.weekbrowser.SkinTextView
+				android:id="@+id/js"
+				android:focusable="false"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal"
+				android:text="@string/js_e"
+				android:textSize="12sp"
+				android:layout_weight="1" />
+			<com.a525team.weekbrowser.SkinTextView
+				android:id="@+id/blockad"
+				android:focusable="false"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal"
+				android:text="@string/blockad_e"
+				android:textSize="12sp"
+				android:layout_weight="1" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<com.a525team.weekbrowser.SkinTextView
+				android:id="@+id/sr"
+				android:focusable="false"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal"
+				android:text="@string/swipe_e"
+				android:textSize="12sp"
+				android:layout_weight="1" />
+			<com.a525team.weekbrowser.SkinTextView
+				android:id="@+id/th"
+				android:focusable="false"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal"
+				android:text="@string/redraw_e"
+				android:textSize="12sp"
+				android:layout_weight="1" />
+			<com.a525team.weekbrowser.SkinTextView
+				android:id="@+id/iframe"
+				android:focusable="false"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal"
+				android:text="@string/frame_e"
+				android:textSize="12sp"
+				android:layout_weight="1" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
